@@ -1,0 +1,17 @@
+h1. ripper: Ruby implementation of the RIP protocol
+
+RIPper is open source and released under the terms of the GNU General Public License v2
+
+h2. Authors
+
+Eugene Pimenov
+Alexey Lapitsky
+
+h2. Notes
+
+Dont ask why classes are merged in the single file ;)
+
+h2. Support & getting help
+
+For getting help you can join #support on the irc.realisticgroup.com or email to lex.public@gmail.com.
+
