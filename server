@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+
+$server = (ARGV[0] || "1").to_i
+
+require File.join(File.dirname(__FILE__), %w{ ripper })
+
+Ripper::Config.define do |c|
+  c.host = '127.0.0.1'
+  if $server == 1
+    c.local_route_table = %w(42.42.42.0/24 42.24.0.0/23)
+  else
+    c.local_route_table = %w(1.1.0.0/24 10.1.0.0/23)
+  end
+end
+
+Ripper.start
+
+
